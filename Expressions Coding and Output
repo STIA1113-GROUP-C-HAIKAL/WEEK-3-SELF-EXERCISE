@@ -1,0 +1,48 @@
+package selfExercise;
+
+public class Expressions {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//	Expressions is a way to execute a mathematical problems
+		//	Example
+		System.out.println ( 3 + 4 );
+		System.out.println ( 3 - 4 );
+		System.out.println ( 3 * 4 );
+		System.out.println ( 4 / 2 );
+		
+		// + is for plus, - is for minus, * is for multiplying, / is for dividing.
+		//There are also remainder with %
+		
+		System.out.println (45 % 6);
+		System.out.println (2 % 2);
+		System.out.println (8 % 20);
+		
+		//On this regard, it will be an error since if we divide something zero it will result in not defined or infinity
+		// System.out.println (11 % 0);
+		
+		// the order of the math system is the same as the one on high school
+		// Which is KaliBaTaKu (Kali, Bagi, Tambah, Kurang (Multiplier, Divider, Plus, Minus))
+		// Parantheses can be used to make specific and separate calculations
+		//Example
+		System.out.println (52 + 2 * 8);
+		// Will have different results with
+		System.out.println ((52 + 2) * 8);
+	}
+
+}
+
+
+//**************************************
+//Output
+//**************************************
+
+7
+-1
+12
+2
+3
+0
+8
+68
+432
