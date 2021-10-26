@@ -1,0 +1,31 @@
+package selfExercise;
+
+public class eNotationAndBoolean {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//e notation is a scientific notation for making more 0's
+		// before or after the value
+		// example and format
+		
+		//	The results of
+		 double exampleVariableOne = 43E5;
+		// will be the same as 
+		 double exampleVariableTwo = 4300000;
+		System.out.println(exampleVariableOne);
+		System.out.println(exampleVariableTwo);
+
+		//A boolean is a value that represents a true or false condition
+		
+		boolean done = false;
+		
+	}
+
+}
+
+//**************************************
+//Output
+//**************************************
+
+4300000.0
+4300000.0
