@@ -1,0 +1,57 @@
+package selfExercise;
+
+public class Variables {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//**********************************************
+		//	Data types
+		//**********************************************
+		
+		//	There are many data types and those are
+		/*
+		 * 	- Int
+		 *	- Double
+		 *	- Float
+		 */
+		//	A format of making a variable is
+		//	(data type) (variable name);
+		//	or	(data type) (variable name) (value)
+		//	For Example :
+		
+		//	A variable must be initialized in either name or arithmatic statement
+		//	A varable must NOT use blank space, other symbols such as ? %, reserved words
+		
+			int	paket1StarlingMeruya;
+			int	kopiHitam 	= 5000;
+			int	money		= 5000;
+			
+		//	There are also constants, it is the same as an identifier but it holds the same value everytime
+			
+			final int Kopi = 3000;
+			
+		//	Arithmatic statement
+			
+			paket1StarlingMeruya = money - 15000;
+		
+		//	A if and else statement format to make options
+		//	The format is below
+			
+			System.out.print("From the money you have you will get ");
+			if (money >= 10000 ) {
+				System.out.println("Dua kopi");
+			} else if (money <= 10000) {
+				System.out.println("Satu kopi");
+			}
+			 
+
+	}
+	
+}
+
+
+//************************************************
+// OUTPUT
+//************************************************
+
+From the money you have you will get Satu kopi
