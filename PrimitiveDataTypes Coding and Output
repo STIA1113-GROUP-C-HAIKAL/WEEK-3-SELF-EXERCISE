@@ -1,0 +1,88 @@
+package selfExercise;
+
+public class PrimitiveDataTypes {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	//********************************************
+	//	Primitive Data and it's limits
+	//********************************************
+		
+	//	Primitive data has it's limits like below
+	//	Type	Storage		Min Value		Max Value
+	//	byte	8 bits		-128			127
+	//	short	16 bits		-32,768			32,767
+	//	int		32 bits		-2,147,483,648	2,147,483,647
+	//	long	64 bits		< -9 x 10(18)	> 9 x 10(18)
+	
+	//	float	32 bits		+/- 3.4 x 10(38) with 7 significant digits
+	//	double	64 bits		+/-	1.7 x 10(308) with 15 significant digits
+		
+	//	Let's try overflowing it
+		byte aminus = -129 + 1;
+		byte aplus = 128 + 1;
+		short bminus = -32769 + 1;
+		short bplus = 32768 + 1;
+		int cminus = -2147483648 + 1;
+		int cplus = 2147483647 + 1;
+		long dminus;
+		long dplus;
+		float eminus;
+		float eplus;
+		double fminus;
+		double fplus;
+		
+		dminus = -9 *(10 * 10 * 10 * 10 * 10 * 10 * 10 * 10 * 10 * 10 * 10 * 10 * 10 * 10 * 10 * 10 * 10 * 10) +1;
+		dplus = 9 *(10 * 10 * 10 * 10 * 10 * 10 * 10 * 10 * 10 * 10 * 10 * 10 * 10 * 10 * 10 * 10 * 10 * 10) +1;
+		eminus = 3.4 * (100000000000000000000000000000000000000); 
+		eplus = 3.4 * (100000000000000000000000000000000000000); 
+		fminus = -1.7 * (100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000);
+		fplus = - 1.7 * (100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000);
+		
+		System.println(aminus);
+		System.println(aplus);
+		System.println(bminus);
+		System.println(bplus);
+		System.println(cminus);
+		System.println(cplus);
+		System.println(dminus);
+		System.println(dplus);
+		System.println(eminus);
+		System.println(eplus);
+		System.println(fminus);
+		System.println(fplus);
+		
+		//If you print this everything will be out of range.
+		
+	}
+
+}
+
+//**************************************
+//Output
+//**************************************
+
+Exception in thread "main" java.lang.Error: Unresolved compilation problems: 
+	Type mismatch: cannot convert from int to byte
+	Type mismatch: cannot convert from int to short
+	Type mismatch: cannot convert from double to float
+	The literal 100000000000000000000000000000000000000 of type int is out of range 
+	Type mismatch: cannot convert from double to float
+	The literal 100000000000000000000000000000000000000 of type int is out of range 
+	The literal 100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 of type int is out of range 
+	The literal 100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 of type int is out of range 
+	The method println(byte) is undefined for the type System
+	The method println(byte) is undefined for the type System
+	The method println(short) is undefined for the type System
+	The method println(short) is undefined for the type System
+	The method println(int) is undefined for the type System
+	The method println(int) is undefined for the type System
+	The method println(long) is undefined for the type System
+	The method println(long) is undefined for the type System
+	The method println(float) is undefined for the type System
+	The method println(float) is undefined for the type System
+	The method println(double) is undefined for the type System
+	The method println(double) is undefined for the type System
+
+	at selfExercise.PrimitiveDataTypes.main(PrimitiveDataTypes.java:24)
